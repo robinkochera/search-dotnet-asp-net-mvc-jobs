@@ -4,11 +4,9 @@
 <!-- Attach CSS for step through tutorial tool -->
 <script src="~/Scripts/bootstrap-tour-standalone.min.js"></script>
 <link href="~/Content/bootstrap-tour-standalone.min.css" rel="stylesheet" />
-
 <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap' async defer></script>
 <b> thomas</b>
 <script>
-
     $(function () {
         $("#q").autocomplete({
             source: "/home/suggest",
@@ -69,13 +67,7 @@
                     placement: "right",
                     title: "Scoring and Sorting",
                     content: "Sometimes you want to be able to let users sort the results, such as in this case where they might want to sort the results by salary, however, sometimes you will want to tune the results that are displayed to the user using 'Scoring'.  This allows you to boost items in the search relevant results in order to improve the user experience or to help meet business objectives.&nbsp;&nbsp;&nbsp;<a href='https://msdn.microsoft.com/en-us/library/azure/dn798928.aspx' target='_blank'>Learn More about Search Scoring</a>"
-                },
-                {
-                    element: "#businessTitleFacetTitle",
-                    placement: "right",
-                    title: "Faceting & Filtering",
-                    content: "Faceted navigation is a filtering mechanism that provides self-directed drilldown navigation in search applications. While the term ‘faceted navigation’ might be unfamiliar, it’s almost a given that you have used one before. As the following example shows, faceted navigation is nothing more than the categories used to filter results.  Try clicking on a facet and see how the results are filtered to only include the specified results.&nbsp;&nbsp;&nbsp;<a href='https://msdn.microsoft.com/en-us/library/azure/dn798927.aspx' target='_blank'>Learn More</a>"
-                }
+                }              
 
             ],
             template: "<div class='popover tour'><div class='arrow'></div><h3 class='popover-title'  style='background-color: #0A5489;color:#FFFFFF'></h3><div class='popover-content'></div><div class='popover-navigation'><button class='btn btn-default' data-role='prev'>« Prev</button><span data-role='separator'> </span><button class='btn btn-default' data-role='next'>Next »</button></div><button class='btn btn-default' data-role='end' style='margin:15px;'>End tour</button></nav></div>"
